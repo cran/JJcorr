@@ -1,0 +1,14 @@
+#importFrom("adapt", adapt) 
+#importFrom("mvtnorm", pmvnorm)
+
+export("copulaCorr","spearmanCorr","empiricalCorr","bootstrap","polyCorr","copulaGF","multiCorr")
+
+S3method(bootstrap, copulaCorr)
+S3method(bootstrap, empiricalCorr)
+S3method(bootstrap, spearmanCorr)
+
+S3method(print, copulaCorr)
+S3method(print, copulaGF)
+S3method(print, copulaBoot)
+S3method(print, empiricalBoot)
+S3method(print, polyCorr)
